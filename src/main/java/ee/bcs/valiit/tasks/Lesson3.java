@@ -5,13 +5,9 @@ import java.util.Scanner;
 public class Lesson3 {
 
     public static void main(String[] args) {
-        System.out.println(uusSumma());
+        System.out.println(factorial());
     }
 
-
-    private static void test(Map<String, String> testMap) {
-        testMap.put("test", "test");
-    }
 
     public static int uusSumma() {
         // TODO liida kokku ja tagasta x ja y väärtus
@@ -37,45 +33,48 @@ public class Lesson3 {
         // Näiteks
         // x = 5
         // return 4*3*2*1 = 24
-        int arv = new int;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Sisesta suvaline number");
+        int arv = scanner.nextInt();
+        int b = 1;
         for (int x = 1; x <= arv; x++) {
-            arv = scanner.nextInt();
-            x = x * arv;
-            return x;
+            b = x * b;
         }
-
-        public static int[] sort ( int[] a){
-            // TODO sorteeri massiiv suuruse järgi
-            // Näiteks {2, 6, 8, 1}
-            // Väljund {1, 2, 6, 8}
-            return new int[0];
-        }
-
-        public static String reverseString (String a){
-            // TODO tagasta string tagurpidi
-            // Näiteks:
-            // a = "Test";
-            // return tseT";
-            System.out.println(a.substring(0, 1));
-            System.out.println(a.substring(1, 2));
-            System.out.println(a.substring(2, 3));
-            System.out.println(a.substring(3, 4));
-            System.out.println(a.substring(2, 4));
-            System.out.println(a.substring(2));
-
-            String[] array = a.split("e");
-            System.out.println(array[0]);
-            System.out.println(array[1]);
-
-            System.out.println(a.indexOf(" "));
-            return "";
-        }
-
-        public static boolean isPrime ( int x){
-            // TODO tagasta kas sisestatud arv on primaar arv (jagub ainult 1 ja iseendaga)
-            return false;
-        }
-
+        return b;
     }
+
+    public static int[] sort(int[] a) {
+        // TODO sorteeri massiiv suuruse järgi
+        // Näiteks {2, 6, 8, 1}
+        // Väljund {1, 2, 6, 8}
+        // leia arrayst a kõige väiksem number
+        //salvesta mingisse muutujasse ka index int a_i, millel vastav number oli
+        //loo uus array b, mis on sama suur kui array a
+        //väärtusta b[0] = varem leitud min väärtus
+        //määra a[a_i]=Integer.MAX_VALUE
+        //tee tsükkel, kus teed kõike eelnevate
+        //a.length korda, nii, et kõigepealt täidame b[0], siis b[1] jne.
+        //for (int a)
+        int[] b;
+        int size = a[].length;
+        b.length = a.length;
+        for (int i, i<)
+        // if number < kui each next number arrays, pane see nr array b kohale [0]
+        return new int[0];
+    }
+
+    public static String reverseString(String a) {
+        // TODO tagasta string tagurpidi
+        // Näiteks:
+        // a = "Test";
+        // return tseT";
+
+        return "";
+    }
+
+    public static boolean isPrime(int x) {
+        // TODO tagasta kas sisestatud arv on primaar arv (jagub ainult 1 ja iseendaga)
+        return false;
+    }
+
+}
